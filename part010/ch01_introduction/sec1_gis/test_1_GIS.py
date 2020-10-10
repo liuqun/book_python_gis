@@ -76,7 +76,7 @@
 # newds = driver.CreateDataSource(extfile)
 # layernew = newds.CreateLayer('rect', None, ogr.wkbPolygon)
 # width = math.fabs(extent[1] - extent[0])
-# height = math.fabs(extent[3] - extent[3])
+# height = math.fabs(extent[3] - extent[2])
 # tw = width / 2
 # th = width / 2
 # extnew = extent[0] + tw
