@@ -21,7 +21,7 @@ newds = driver.CreateDataSource(extfile)
 lyrn = newds.CreateLayer('rect', None, ogr.wkbPolygon)
 ###############################################################################
 feat = layer.GetNextFeature()
-while feat is not None:
+while not feat is None:
     lyrn.CreateFeature(feat)
     feat = layer.GetNextFeature()
 newds.Destroy()
